@@ -15,7 +15,7 @@
 
     .a4-page {
       width: 210mm;
-      height: 297mm;
+      height: 900mm;
       margin: 20px auto;
       background: #ffffff;
       padding: 20mm;
@@ -46,13 +46,14 @@
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 40px;
       color: #333;
     }
 
     h2 {
-      font-size: 22px;
-      color: #555;
+      font-size: 28px;
+      color: #333;
+      font-weight: 500;
       margin-top: 10px;
     }
 
@@ -83,14 +84,56 @@
       list-style: none;
       padding-left: 0;
     }
+
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-left: 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      border: 3px solid #ffffff;
+    }
+
+    .name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .name-text {
+      font-size: 40px;
+      color: #333;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .role-text {
+      font-size: 28px;
+      color: #333;
+      font-weight: 500;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <div class="a4-page">
     <!-- 左边部分 -->
     <div class="left-section">
-      <h1>Liu Rufen</h1>
-      <h2>Java Developer</h2>
+      <div class="name">
+        <img src="asserts/person.jpg" class="profile-image">
+        <div class="text-container">
+          <h1 class="name-text">Liu Rufan</h1>
+          <h2 class="role-text">Full Stack Developer</h2>
+        </div>
+      </div>
       <p class="content" style="font-style: italic;">
         Experienced Java Developer with over 7 years of experience in full-stack development, specializing in backend frameworks and frontend technologies. Proven expertise in designing and implementing complex systems and managing cross-functional teams.
       </p>
@@ -104,11 +147,121 @@
           <li>Improved remote work collaboration models.</li>
         </ul>
 
-        <p><strong>Yueda Network Technology (China)</strong> | Java Developer</p>
+        <p><strong>Yueda Network Technology (China)</strong> | Java Developer/ Prodcut Manager</p>
         <p>2017.07 - 2020.07</p>
         <ul>
           <li>Developed and maintained e-commerce platforms.</li>
           <li>Integrated multiple systems with healthcare applications.</li>
+        </ul>
+
+        <p><strong>Quanta Computer Inc. (USA)</strong> | Tester</p>
+        <p>2016.07 - 2017.07</p>
+        <ul>
+          <li>Contributed to server testing and version upgrades.</li>
+        </ul>
+        <p><strong>Private Math Tutor (USA) </strong></p>
+        <p>2015.05 - 2016.05</p>
+        <ul>
+          <li>Provided one-on-one instruction in advanced mathematics</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title">Project Experience</h3>
+      <div class="content">
+        <p><strong>RealEstate Property Management Project</strong> | Full Stack Developer</p>
+        <p>2023.01 - 2024.09</p>
+        <ul>
+          <li>A property management website, including user side and admin pannal.</li>
+          <li>Development environment: https://realestate.lrdev03.click/</li>
+          <li>Phase 1: Built the basic framework. Frontend using Nuxt.js and backend using Java. Utilized a Single Page Application (SPA) architecture, with unified code for both user and admin interfaces.</li>
+          <li>Phase 2: Implemented advanced functionalities such as subscription management, booking management, and payment integration.</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>ArticlePost News Article System</strong> | Project Manager, Backend Engineer</p>
+        <p>2023.12 - 2024.02</p>
+        <ul>
+          <li>A system that includes role management, batch upload/download of articles, resumable uploads, and article review functionalities.</li>
+          <li>Frontend: Vue.js</li>
+          <li>Backend: Java</li>
+          <li>Storage: AWS for article storage.</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>CSF Financial Loan System</strong> | Project Manager</p>
+        <p>2023.01 - 2023.09</p>
+        <ul>
+          <li>A system focused on handling a large variety of form fields, dynamic list displays, and loan application submissions after form completion. Does not include a review functionality.</li>
+          <li>The review feature is a separate project handled by another team and department.</li>
+          <li>Frontend: JavaScript</li>
+          <li>Backend: Java</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Online Contract Comic Mall</strong> | Frontend Engineer</p>
+        <p>2022.05 - 2022.12</p>
+        <ul>
+          <li>Need Onlie Contract sign when purchase comic mall.</li>
+          <li>Responsible for the frontend development, selecting the uniapp framework for compatibility with H5, iOS, and Android.</li>
+          <li>Use nuxt.js with SSR (Server-Side Rendering) technology to enable server-side rendering and support SEO.</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Japan Horse Racing Prediction System</strong> | Full Stack Developer</p>
+        <p>2022.03 - 2022.04</p>
+        <ul>
+          <li>The system provides real-time recording of Japanese horse racing results and offers prediction calculations.</li>
+          <li>Tech Stack: Node.js + TypeScript + webSocke</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Sales Backend Management System</strong> | Full Stack Developer</p>
+        <p>2021.07 - 2021.08</p>
+        <ul>
+          <li>Main Functionality: Multi-store sales management backend platform.</li>
+          <li>Integrated with WeChat and ERP systems.</li>
+          <li>Tech Stack: HTML5 + CSS + AJAX + JSP + ThinkPHP3</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>GUK Shop</strong> | Full Stack Developer</p>
+        <p>2021.04 - 2021.07</p>
+        <ul>
+          <li>	Main Responsibilities: Flash sales.</li>
+          <li>Tech Stack: VUE + THINKPHP5 + MySQL + Redis + Nginx</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Third-Party Payment Platform</strong> | Web Frontend</p>
+        <p>2020.12 - 2021.04</p>
+        <ul>
+          <li>Project Description: Third-party payment platform</li>
+          <li>Tech Stack: Ajax + HTML + CSSx</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>WeChat Group Purchase Mini Program</strong> | Project Manager</p>
+        <p>2020.01 - 2020.08</p>
+        <ul>
+          <li>Main Responsibilities: Online group purchase for promotional activities.</li>
+          <li>Key Features: Online payment, client-side (mini program) + merchant-side (mini program) + management console (PC).</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Jinlu Blood Dialysis System</strong> | Operations and Development Engineer</p>
+        <p>2018.5 - 2020.01</p>
+        <ul>
+          <li>Frontend: React</li>
+          <li>Backend: Yii</li>
+          <li>Applied in dialysis hospitals to simulate online dialysis rooms and complete business logic.</li>
+          <li>The system uses serial ports to interface with offline devices, such as weight scales and blood pressure monitors.</li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><strong>Yueda Group Official Website</strong> | Operations and Development Engineer</p>
+        <p>2017.12- 2018.04</p>
+        <ul>
+          <li>Tech Stack: WordPress + PHPadmimn + Woccommerce</li>
         </ul>
       </div>
     </div>
@@ -119,19 +272,22 @@
       <ul class="content no-style">
         <li>Mail: 236746413@qq.com</li>
         <li>Phone: +86 15861995515</li>
+        <li>WeChat: 15861995515</li>
         <li>Location: Hangzhou, Zhejiang, China</li>
+        <li>Blog: https://liurufan.github.io/resume/</li>
         <li>LinkedIn: https://www.linkedin.com/in/rufan-liu-36ab95122/</li>
-        <li>Git: https://github.com/dev-juhan</li>
+        <li>Git (work): https://github.com/dev-juhan</li>
+        <li>Git (person): https://github.com/liurufan</li>
       </ul>
 
       <!-- 有点的列表 -->
       <h3 class="section-title">Skills</h3>
       <ul class="content">
         <li>Languages: Java, JavaScript, Python, PHP</li>
-        <li>Frontend: React, Vue, Nuxt.js, Node.js</li>
-        <li>Backend: Yii2, Laravel, Spring Boot</li>
+        <li>Frontend: Vue.js, React.js, Nuxt.js, Node.js</li>
+        <li>Backend: Spring Boot, Yii2, Laravel, Node.js</li>
         <li>Operating Systems: Linux, CentOS, Windows Server</li>
-        <li>Tools: GitHub, Jenkins</li>
+        <li>Tools: GitHub, Jenkins, VsCode, IDEA</li>
       </ul>
 
       <!-- 无点列表 -->
